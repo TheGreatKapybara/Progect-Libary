@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="newBookButton" onclick="showMainForm()">Добавить книгу</button>
+    
+    <form id="mainForm" method="get">
+        <h1>Давайте добавим книгу</h1>
+        <div class="formInputs">
+        <div>
+        <label for="bookName">Название книги</label>
+        <label for="bookAuthor">Имя автора</label>
+        <label for="pagesCount">Колисчество страниц</label>
+        <label for="isRead">Прочитано?</label>
+        </div>
+        <div class="inputs">
+            <input type="text" name="bookName" id="bookName"></input><br>
+            <input type="text" name="bookAuthor" id="bookAuthor"></input><br>
+            <input type="number" name="pagesCount" id="pagesCount"></input><br>
+            <input type="checkbox" name="isRead"  checked></input><br>
+        </div>
+        </div>
+        <input type="submit" name="submit" value="Отправить">
+    </form>
+
+    <div class="bookList">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
